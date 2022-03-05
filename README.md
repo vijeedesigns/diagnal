@@ -11,7 +11,7 @@ The project is created with create-react-app.\
 
 ## Run the project
 
-To run the app in the development mode, please do `npm start` from terminal.
+To run the app in the development mode, please do `npm start` from terminal.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Run the test files
