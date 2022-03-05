@@ -4,9 +4,9 @@ This is a test project done by Vijeesh PN for Diagnal Technologies Private Limit
 
 ## Technologies and libraries
 
-The project is created with create-react-app.
-`"react": "^17.0.2"`
-`"redux": "^4.1.2"`
+The project is created with create-react-app.\
+`"react": "^17.0.2"`\
+`"redux": "^4.1.2"`\
 `"react-redux": "^7.2.6"`
 
 ## Run the project
