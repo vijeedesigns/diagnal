@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from "react-redux";
 import configureMockStore from "redux-mock-store";
-import thunk from 'redux-thunk'
-import App from './App';
+import thunk from 'redux-thunk';
+import MovieListing from './index';
 
 const middlewares = [thunk];
 const mockStore = configureMockStore(middlewares);
@@ -36,8 +36,11 @@ const store = mockStore({
 	}
 });
 
-test('App component', () => {
-	render(<Provider store={store}><App /></Provider>);
-	const app = screen.getByTestId('diagnal-movies-device-wrap');
-	expect(app).toBeInTheDocument();
+test('MovieListing component', () => {
+    render(<Provider store={store}><MovieListing /></Provider>);
+    const header = screen.getByTestId('diagnal-movies-header');
+    expect(header).toBeInTheDocument();
+
+    const body = screen.getByTestId('diagnal-movies-body');
+    expect(body).toBeInTheDocument();
 });
